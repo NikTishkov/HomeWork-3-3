@@ -5,8 +5,7 @@ public class Main {
         int clientOS = 1;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке.");
-        }
-        else if (clientOS == 1) {
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке.");
         }
         System.out.println("Task 2");
@@ -51,16 +50,16 @@ public class Main {
         //Task 5
         int monthNumber = 12;
         switch (monthNumber) {
-            case 1,2,12:
+            case 1, 2, 12:
                 System.out.println("Сейчас зима.");
                 break;
-            case 3,4,5:
+            case 3, 4, 5:
                 System.out.println("Сейчас весна.");
                 break;
-            case 6,7,8:
+            case 6, 7, 8:
                 System.out.println("Сейчас лето.");
                 break;
-            case 9,10,11:
+            case 9, 10, 11:
                 System.out.println("Сейчас осень.");
                 break;
             default:
