@@ -6,7 +6,7 @@ public class Main {
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке.");
         }
-        if (clientOS == 1) {
+        else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке.");
         }
         System.out.println("Task 2");
@@ -26,13 +26,14 @@ public class Main {
         System.out.println("Task 3");
         //Task 3
         int age = 2021;
-        int ageLeap = 1584;
-        if (age > ageLeap && age % 4 == 0 || age > ageLeap && age % 400 == 0) {
-            System.out.println("Год високосный.");
-        } else if (age > ageLeap || age % 100 == 0) {
-            System.out.println("Год не високосный.");
-        } else if (age < ageLeap) {
-            System.out.println("Год меньше того, в котором был придуман високосный год.");
+        if (age <= 1584) {
+            System.out.println("Год меньше того, в котором был введен високосный.");
+        } else {
+            if ((age % 400 == 0) || (age % 100 != 0 && age % 4 == 0)) {
+                System.out.println("Год високосный.");
+            } else {
+                System.out.println("Год не високосный.");
+            }
         }
         System.out.println("Task 4");
         //Task 4
